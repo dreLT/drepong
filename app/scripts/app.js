@@ -57,10 +57,10 @@ DrePong.directive('pongBoard', ['$window', 'PaddleService', 'ComputerService', '
           BallService.render();
         };
 
-        // console.log(pongBoard);
-
-        var update = function(scope) {
-          PlayerService.update(scope);
+        console.log(scope.keysDown);
+        var keysDown = scope.keysDown;
+        var update = function() {
+          PlayerService.update(keysDown);
           ComputerService.update(ball);
           BallService.update(player.paddle, computer.paddle);
         };
@@ -157,7 +157,7 @@ DrePong.service('ComputerService', ['PaddleService', function(PaddleService) {
         
 }]);
 
-DrePong.service('PlayerService', ['PaddleService', '$rootScope', function(PaddleService, $rootScope) {
+DrePong.service('PlayerService', ['PaddleService', function(PaddleService) {
 
 var playerPaddle;
 
@@ -171,9 +171,9 @@ return {
           context.fillStyle = '#0000FF';
           context.fillRect(playerPaddle.x, playerPaddle.y, playerPaddle.width, playerPaddle.height);
           },
-  update: function(scope) {
-    console.log(scope.keysDown);
-    for (var key in scope.keysDown) {
+  update: function(keysDown) {
+    console.log(keysDown);
+    for (var key in keysDown) {
             var value = Number(key);
             if (value === 37) {
               playerPaddle.move(-4, 0);
