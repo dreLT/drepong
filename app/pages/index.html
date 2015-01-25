@@ -6,8 +6,67 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body ng-controller="landingController">
-  <canvas pong-board height="600" width="400"></canvas>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
-    <script src="/js/app.js"></script>
+  <div class="wrapper">
+    <canvas class="pong-board" pong-board height="600" width="400"></canvas>
+      <div class="computer-status"><span>Computer:</span><br />
+        <table>
+          <tbody>
+            <tr>
+              <td class="points-heading">
+                Points
+              </td>
+              <td class="games-heading">
+                Games
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{scores.computerScores}}
+              </td>
+              <td>
+                {{scores.computerGames}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="player-status"><span>Player:</span><br />
+        <table>
+          <tbody>
+            <tr>
+              <td class="points-heading">
+                Points
+              </td>
+              <td class="games-heading">
+                Games
+              </td>
+              <td class="money-heading">
+                Money
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{scores.playerScores}}
+              </td>
+              <td>
+                {{scores.playerGames}}
+              </td>
+              <td>
+                ${{scores.playerMonies}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="player-inventory"><span>Player Inventory:</span><br />
+          <ul>
+            <li ng-repeat="item in playerInventory">{{item}}</li>
+          </ul>
+          <span>{{purchaseMessage}}</span>
+        </div>
+      </div>
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+  <script src="/js/app.js"></script>
 </body>
 </html>
