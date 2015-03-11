@@ -1,26 +1,27 @@
 var Hapi = require('hapi'),
     path = require('path'),
     port = process.env.PORT || 3000,
-    server = new Hapi.Server(+process.env.PORT, '0.0.0.0'),
+    //server = new Hapi.Server(port),
+    server = new Hapi.Server(~~process.env.PORT || 3000, '0.0.0.0'),
     routes = {
         css: {
             method: 'GET',
-            path: '/css/{path*}',
+            path: '/dist/css/{path*}',
             handler: createDirectoryRoute('css')
         },
         js: {
             method: 'GET',
-            path: '/js/{path*}',
+            path: '/dist/js/{path*}',
             handler: createDirectoryRoute('js')
         },
         images: {
             method: 'GET',
-            path: '/images/{path*}',
+            path: '/dist/images/{path*}',
             handler: createDirectoryRoute('images')
         },
         templates: {
             method: 'GET',
-            path: '/templates/{path*}',
+            path: '/dist/templates/{path*}',
             handler: createDirectoryRoute('templates')
         },
         spa: {
