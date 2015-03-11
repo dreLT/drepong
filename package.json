@@ -4,8 +4,7 @@
   "description": "Bloc skeleton project for a single page application",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "bash ./post_install.sh"
+    "start": "node server.js"
   },
   "author": "Bloc and Nick Ferraro",
   "license": "ISC",
