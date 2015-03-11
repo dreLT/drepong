@@ -12,7 +12,8 @@
   "dependencies": {
     "grunt": "^0.4.5",
     "hapi": "^7.5.0",
-    "path": "^0.4.9"
+    "path": "^0.4.9",
+    "express": "~4.9.8"
   },
   "devDependencies": {
     "browserify": "^4.2.3",
