@@ -1,0 +1,17 @@
+div.wrapper {
+  width: 400px;
+  margin: 0 auto; }
+
+div.computer-status {
+  float: left; }
+
+div.player-status {
+  float: right; }
+
+div.computer-status > span, div.player-status > span {
+  font-weight: bold; }
+
+div.player-inventory {
+  margin-top: 5px; }
+  div.player-inventory > span {
+    font-weight: bold; }
