@@ -38,10 +38,10 @@ app/
  |   |__home.html
 ```
 
-`pages/__index.html` The HTML view
-`sass/__styles.scss` SASS file for styling. Grunt will automatically detect saved changes to this file and auto-compile them to poduction css (located in `/dist/css`).
-`scripts/__app.js` AngularJS file containing all game functionality
-`templates/__home.html` For HTML partials or smaller sets of HTML (currently not being used)
+`pages/__index.html` The HTML view  
+`sass/__styles.scss` SASS file for styling. Grunt will automatically detect saved changes to this file and auto-compile them to poduction css (located in `/dist/css`).  
+`scripts/__app.js` AngularJS file containing all game functionality  
+`templates/__home.html` For HTML partials or smaller sets of HTML (currently not being used)  
 
 ### Production
 Grunt builds and outputs all saved changes made in the development directory, `app/`, to production directory, `dist/`, like so:
