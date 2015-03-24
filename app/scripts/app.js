@@ -17,7 +17,7 @@ DrePong.controller('landingController', ['$scope', '$window', 'PlayerService', '
     playerScores: 0,
     playerGames: 0,
     playerMonies: 0,
-    computerScores: 19,
+    computerScores: 0,
     computerGames: 0
   }
 

@@ -1,7 +1,6 @@
 # DrePong
 
-DrePong is a classic pong game app built in AngularJS. The live app can be viewed here: (add heroku url).
-A game against the computer AI starts as soon as the user accesses or refreshes the page. Once either the computer's or player's score reaches 21, a game is scored and is reflected on the scoreboard.
+DrePong is a classic pong game app built in AngularJS. The live app can be viewed here: [https://drepong.herokuapp.com](https://drepong.herokuapp.com). A game against the computer AI starts on page load. Once the computer or player's score reaches 21, a game is scored - which is reflected on the scoreboard.
 
 ## Prerequisites
 * Node.js - Download and install [Node.js](https://nodejs.org/download/)
