@@ -1,6 +1,6 @@
 # DrePong
 
-DrePong is a classic pong game app built in AngularJS. The live app can be viewed here: [https://drepong.herokuapp.com](https://drepong.herokuapp.com). A game against the computer AI starts on page load. Once the computer or player's score reaches 21, a game is scored - which is reflected on the scoreboard.
+DrePong is a classic pong game built in AngularJS. The live app can be viewed here: [https://drepong.herokuapp.com](https://drepong.herokuapp.com). A game against the AI starts on page load. Once the computer or player's score reaches 21, a game is scored and reflected on the scoreboard.
 
 ## Prerequisites
 * Node.js - Download and install [Node.js](https://nodejs.org/download/)
@@ -37,10 +37,10 @@ app/
  |   |__home.html
 ```
 
-`pages/__index.html` The HTML view  
-`sass/__styles.scss` SASS file for styling. Grunt will automatically detect saved changes to this file and auto-compile them to poduction css (located in `/dist/css`).  
-`scripts/__app.js` AngularJS file containing all game functionality  
-`templates/__home.html` For HTML partials or smaller sets of HTML (currently not being used)  
+`pages/index.html` The HTML view  
+`sass/styles.scss` SASS file for styling. Grunt will automatically detect saved changes to this file and auto-compile them to poduction css (located in `/dist/css`).  
+`scripts/app.js` AngularJS file containing all game functionality  
+`templates/home.html` For HTML partials or smaller sets of HTML (currently not being used)  
 
 ### Production
 Grunt builds and outputs all saved changes made in the development directory, `app/`, to production directory, `dist/`, like so:
